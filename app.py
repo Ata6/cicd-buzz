@@ -9,10 +9,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def generate_buzz():
-    page = '<!doctype html><html lang="en"><head><meta charset="utf-8">'
-    page += '<title>CI/CD Buzz - Ata6</title></head><body><h1>'
+    page = '<!doctype html><html lang="nl"><head><meta charset="utf-8">'
+    page += '<title>Automation - Ata6</title></head><body>'
+    page += '<h1>Mijn buzz-generator</h1>'
+    page += '<p>Ververs de pagina voor een nieuwe zin.</p><h2>'
     page += generator.generate_buzz()
-    page += '</h1><p>Greetings from Ata6</p></body></html>'
+    page += '</h2><p>Greetings from Ata6</p></body></html>'
     return page
 
 
